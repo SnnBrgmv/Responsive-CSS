@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f2f1f1;
+}
+
+header {
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+header p {
+    width: 40%;
+    font-size: 1.6rem;
+    color: #499f66;
+    font-weight: bold;
+}
+
+header span.fas {
+    display: none;
+}
+
+header div {
+    width: 60%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 30px;
+}
+
+header div ul li {
+    display: inline-block;
+    color: #499f66;
+    padding-left: 15px;
+    font-size: 1.1rem;
+    ;
+}
+
+header div button {
+    background-color: #4d9e67;
+    padding: 8px;
+    outline: none;
+    border: 1px solid #4d9e67;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+
+
+
+@media only screen and (max-width: 1279px) and (min-width: 769px) {
+    header {
+        background-color: #4a9e65;
+        flex-wrap: wrap;
+    }
+
+    header span.fas {
+        display: block;
+        color: white;
+        font-size: 1.1rem;
+    }
+
+    header p {
+        color: white;
+        font-size: 1.4rem;
+    }
+
+    header div {
+        width: 100%;
+        justify-content: space-between;
+        column-gap: 10%;
+    }
+
+    header div ul {
+        width: 70%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header div ul li {
+        color: white;
+        padding: 0;
+        font-size: .9rem;
+    }
+
+    header div button {
+        width: 15%;
+        background-color: white;
+        color: #499f66;
+        font-size: .7rem;
+    }
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    header {
+        background-color: #4a9e65;
+        flex-wrap: wrap;
+    }
+
+    header span.fas {
+        display: block;
+        color: white;
+        font-size: 1.1rem;
+    }
+
+    header p {
+        color: white;
+        font-size: 1.4rem;
+    }
+
+    header div {
+        width: 100%;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    header div ul {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+    }
+
+    header div ul li {
+        color: white;
+        padding: 0;
+        font-size: 1rem;
+    }
+
+    header div button {
+        width: 25%;
+        background-color: white;
+        color: #499f66;
+        font-size: .7rem;
+    }
+}
